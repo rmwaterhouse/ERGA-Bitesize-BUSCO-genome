@@ -16,7 +16,7 @@ tasks:
       source ~/.bashrc
 
       # Create a new environment with Python 3.8 for compatibility with BUSCO
-      mamba create -n bitesize-busco-genome bioconda::busco -y
+      mamba create -n bitesize-busco-genome bioconda::busco=5.8.2 -y
 
       # Activate the environment in the same terminal session
       source ~/.bashrc
