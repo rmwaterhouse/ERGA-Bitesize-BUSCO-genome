@@ -10,4 +10,4 @@ This tutorial was created by Robert Waterhouse with the assistance of of Giulia 
 
 
 ## Licence
-MIT
+CC0 1.0 Universal
