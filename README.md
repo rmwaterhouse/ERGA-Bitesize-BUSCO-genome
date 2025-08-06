@@ -2,7 +2,7 @@
 
 ## Tutorial: BUSCO - the what, why, and how!
 
-Step-by-step tutorial instructions are available here: [ERGA-Bitesize-How_to_BUSCO_genome_mode_v1.0.pdf](https://github.com/rmwaterhouse/ERGA-Bitesize-BUSCO-genome/blob/main/ERGA-Bitesize-How_to_BUSCO_genome_mode_v1.1.pdf)  
+Step-by-step tutorial instructions are available here: [ERGA-Bitesize-How_to_BUSCO_genome_mode_v1.1.pdf](https://github.com/rmwaterhouse/ERGA-Bitesize-BUSCO-genome/blob/main/ERGA-Bitesize-How_to_BUSCO_genome_mode_v1.1.pdf)  
 [Download](https://github.com/rmwaterhouse/ERGA-Bitesize-BUSCO-genome/blob/main/ERGA-Bitesize-How_to_BUSCO_genome_mode_v1.1.pdf?raw=true) the PDF to get started!
 
 ## Authors and acknowledgments
