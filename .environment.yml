@@ -2,5 +2,4 @@ name: bitesize-busco-genome
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
-  - busco=0.0.0
+  - busco=6.0.0
