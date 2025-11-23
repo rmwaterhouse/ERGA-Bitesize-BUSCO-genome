@@ -1,5 +1,7 @@
 name: bitesize-busco-genome
 channels:
   - conda-forge
+  - bioconda
+  - defaults
 dependencies:
   - busco=6.0.0
