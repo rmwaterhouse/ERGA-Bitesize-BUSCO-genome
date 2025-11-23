@@ -20,9 +20,9 @@ conda install -n base -c conda-forge mamba -y
 mamba shell init --shell bash --root-prefix=~/.local/share/mamba
 source ~/.bashrc
 
-# Create a new environment with Python 3.8 for compatibility with BUSCO
-mamba create -n bitesize-busco-genome bioconda::busco=6.0.0 -y
+# Create a new environment with Python 3 for compatibility with BUSCO
+mamba create -n bitesize bioconda::busco=6.0.0 -y
 
 # Activate the environment in the same terminal session
 source ~/.bashrc
-mamba activate bitesize-busco-genome
+mamba activate bitesize
