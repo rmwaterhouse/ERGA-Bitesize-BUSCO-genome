@@ -1,12 +1,16 @@
 {
   "name": "Bioconda Environment",
   "image": "mcr.microsoft.com/devcontainers/miniconda:latest",
-  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "onCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "conda activate bitesize",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python"
-      ]
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/envs/bitesize/bin/python"
+      }
     }
   }
 }
