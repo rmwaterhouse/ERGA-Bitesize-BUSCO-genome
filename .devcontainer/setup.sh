@@ -13,5 +13,8 @@ conda install -n base -c conda-forge mamba -y
 # Create environment
 mamba create -n bitesize python=3.10 busco=6.0.0 -y
 
+# Initialize conda for bash
+conda init bash
+
 # Auto-activate
 echo "conda activate bitesize" >> ~/.bashrc
