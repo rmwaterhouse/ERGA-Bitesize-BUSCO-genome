@@ -1,20 +1,7 @@
 #!/bin/bash
-set -e
+set -ex
 
-# Configure channels
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-conda config --set channel_priority strict
-
-# Install mamba
 conda install -n base -c conda-forge mamba -y
-
-# Create environment
-mamba create -n bitesize python=3.10 busco=6.0.0 -y
-
-# Initialize conda for bash
+mamba env create -f environment.yml
 conda init bash
-
-# Auto-activate
 echo "conda activate bitesize" >> ~/.bashrc
