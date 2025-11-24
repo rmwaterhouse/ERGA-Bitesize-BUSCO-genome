@@ -1,0 +1,19 @@
+{
+  "name": "Bioconda Environment",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:latest",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postAttachCommand": "conda activate bitesize",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/envs/bitesize/bin/python",
+        "terminal.integrated.env.linux": {
+          "CONDA_DEFAULT_ENV": "bitesize"
+        }
+      }
+    }
+  }
+}
