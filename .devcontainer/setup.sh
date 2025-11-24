@@ -4,8 +4,11 @@ set -x
 # Fix permissions first
 sudo chown -R vscode:vscode /opt/conda
 
+# Configure conda to always say yes
+conda config --set always_yes true
+
 # Now everything runs as vscode user with auto-yes flags
-conda install -c conda-forge mamba -y
-mamba env create -f environment.yml -y
-echo 'eval "$(mamba shell hook --shell bash)"' >> ~/.bashrc
+conda install -c conda-forge mamba
+mamba env create -f environment.yml
+conda init bash
 echo 'mamba activate bitesize' >> ~/.bashrc
