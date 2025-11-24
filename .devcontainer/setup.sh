@@ -7,10 +7,11 @@ conda install -n base -c conda-forge mamba -y
 # Create environment from file
 mamba env create -f environment.yml
 
-# Properly initialize conda for the vscode user
-eval "$(conda shell.bash hook)"
+# Initialize conda for bash (this modifies ~/.bashrc)
 conda init bash
 
-# Add activation to bashrc AND bash_profile
-echo 'eval "$(conda shell.bash hook)"' >> ~/.bashrc
+# Add activation command to bashrc
 echo 'conda activate bitesize' >> ~/.bashrc
+
+# Also add to bash_profile for login shells
+echo 'conda activate bitesize' >> ~/.bash_profile
