@@ -11,4 +11,4 @@ conda config --set always_yes true
 conda install -c conda-forge mamba
 mamba env create -f environment.yml
 conda init bash
-echo 'mamba activate bitesize' >> ~/.bashrc
+echo 'conda activate bitesize' >> ~/.bashrc
