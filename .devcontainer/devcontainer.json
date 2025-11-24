@@ -1,7 +1,7 @@
 {
   "name": "Bioconda Environment",
   "image": "mcr.microsoft.com/devcontainers/miniconda:latest",
-  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postCreateCommand": "sudo bash .devcontainer/setup.sh",
   "customizations": {
     "vscode": {
       "extensions": [
