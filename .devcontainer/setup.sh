@@ -12,3 +12,6 @@ conda install -c conda-forge mamba
 mamba env create -f environment.yml
 conda init bash
 echo 'conda activate bitesize' >> ~/.bashrc
+
+# Source the bashrc to apply changes immediately
+source ~/.bashrc
