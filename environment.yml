@@ -1,0 +1,9 @@
+name: bitesize
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - busco=6.0.0
+  
