@@ -1,14 +1,11 @@
 #!/bin/bash
 set -x
 
-# Install mamba
+# Fix permissions first
+sudo chown -R vscode:vscode /opt/conda
+
+# Now everything runs as vscode user
 conda install -c conda-forge mamba -y
-
-# Create environment
 mamba env create -f environment.yml
-
-# Initialize conda for the vscode user specifically
-sudo -u vscode conda init bash
-
-# Add activation to vscode user's bashrc
-echo 'conda activate bitesize' >> /home/vscode/.bashrc
+conda init bash
+echo 'conda activate bitesize' >> ~/.bashrc
